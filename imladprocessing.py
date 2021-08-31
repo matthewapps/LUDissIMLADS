@@ -1,3 +1,10 @@
+//IMLADS network anomaly detection algorithm
+//The code reads through each of the files specified in the variable files_to_process stored in sld
+//The actual files are stored on Kaggle see the readme file 
+//The files need to be downloaded and stored in the appropriate folder
+//The resulting output files are then loaded on Kaggle and analysed there see readme file
+
+
 import csv
 
 import numpy as np
@@ -60,9 +67,7 @@ addresses=["192.168.1.195", "192.168.1.198", "192.168.1.199", "192.168.1.193","1
 
 #specify files to process in this run
 files_to_process=[0,2,5,6,7,12,16,17,18,19,20,21]
-#files_to_process=[7]
-#files_to_process=[17]
-#files_to_process=[20]
+
 
 timewindow =60 #  window in seconds
 EWMA = 5
